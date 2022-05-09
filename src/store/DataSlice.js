@@ -21,9 +21,11 @@ const dataSlice = createSlice({
     name: 'cart',
      initialState,
     reducers: {
-    //    search (state){
-    // const searchText = state.target.value;
-    // const searchResult = dataApi.filter(d => d.rocket.rocket_name.toLowerCase().includes(searchText.toLowerCase()));
-    //    } 
+     add(state,action){
+         state.push(action.payload);
+     }
     }
 });
+
+export const {add} = dataSlice.actions;
+export default dataSlice.reducer; 
