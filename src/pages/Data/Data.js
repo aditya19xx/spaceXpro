@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Data = (props) => {
-    const { mission_name,rocket, rocket_name, links, mission_patch, launch_date_local, upcoming, launch_year,launch_success,launch_failure_details,reason} = props.data;
+    const { mission_name,rocket, rocket_name, links, mission_patch, launch_date_local, upcoming, launch_year,launch_success} = props.data;
 
     return (
         <div>
