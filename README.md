@@ -11,6 +11,10 @@
 * Redux toolkit
 * Google fonts
 
+### Deploy
+* created build folder with 'npm run build'
+* deployed on netlify
+
 ### Code Editor
 
 * VS Code
