@@ -41,27 +41,11 @@ const Home = () => {
   return (
    
     <>
-      <navigation>
-      <div className="body">
-             <Navbar bg="dark" variant="dark" expand="lg">
-                    <Navbar.Brand href="#">SpaceXpro</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav
-                            className="mr-auto my-2 my-lg-0"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll
-                        >
-                            {/* <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">About</Nav.Link> */}
-                        </Nav>
-                       
-                    </Navbar.Collapse>
-                </Navbar>
-        </div>
-      </navigation>
+     
+
+      <h1>SpaceXpro</h1>
      <div>
-     <Form className="d-flex">
+     <Form className="d-flex container position-absolute  end-0 ">
                             <input
                             onChange={ handleSearch }
                                 type="search"
@@ -71,9 +55,7 @@ const Home = () => {
                             />
                             <Button  variant="outline-success">Search</Button>
                         </Form>
-     </div>
-     <div>
-       <h4>Total {displayData.length} rockets found</h4>
+                        <h4 className="position-absolute end-0 w-75">Total {displayData.length} rockets found</h4>
      </div>
       <div className="w-75 mx-auto mt-5">
       {/* {setIsLoading(true)} */}
